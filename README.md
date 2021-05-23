@@ -8,35 +8,33 @@ You can change below mention variable as per your need.
 We only want to check for slots availability for the same day for 
 let's givenum_days as 0 here.
 ```
-	num_of_days = 0
+num_of_days = 0
 ```    
 if we want to check slot availability for next 2 days, so let's givenum_days as 2 here.
 ```
-	num_of_days = 2
+num_of_days = 2
 ```    
 
 The Slots are available in two categories, Age 45+ and Age 18+. Let's proceed with Age 18+ for now, you can set it according to your need.
 ```
-	age = 25
+age = 25
 ```    
  Can perform the search based on Pincode. Since we are looking for the slots available nearby, I am making use of Pincode. You can also pass multiple pin-codes, separated by commans in the list.
 
 ```
-	pincode = []string{"395006"}
-
+pincode = []string{"395006"}
     or 
-
-    pincode = []string{"395006,395009"}
+pincode = []string{"395006,395009"}
 ```
 
 Used for notification, If you want to turn it on so pass true flag
 ```
-	PlaySound = false
+PlaySound = false
 ```
 
 Run script after every 5 minutes and check slot availability
 ```
-    Ticker = 5 * time.Minute
+Ticker = 5 * time.Minute
 ```
 
 ## pre requisite
